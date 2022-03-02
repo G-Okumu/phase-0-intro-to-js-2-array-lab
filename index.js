@@ -28,9 +28,11 @@ function prependCat(name) {
 }
 
 function removeLastCat() {
-    cats.slice(-1);
+    let newCatArray = cats.slice(0, -1);
+    return newCatArray;
 }
 
 function removeFirstCat() {
-    cats.slice(1);
+    let newCatArray = cats.slice(1);
+    return newCatArray;
 }
